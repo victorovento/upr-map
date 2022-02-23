@@ -1,0 +1,182 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Styles for OLU.view.sidecontent.Feature
+ */
+
+/*
+ * General
+ */
+.olu-side-content-feature-title h2 {
+	margin-bottom: 0;
+}
+
+.olu-side-content-feature-title span {
+	font-size: 1.03em;
+}
+
+
+/*
+ * Pictures
+ */
+.olu-side-content-feature-pictures {
+	width: 100%;
+	height: 250px;
+	background-color: black;
+	margin: 5px 0;
+	position: relative;
+}
+
+.olu-side-content-feature-pictures div.olu-next,
+.olu-side-content-feature-pictures div.olu-prev {
+	color: #fff;
+	text-shadow: 0 0 1px #000;
+	font-size: 1.8em;
+	font-weight: bold;
+	height: 100%;
+	display: table;
+	padding: 0 10px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 100;
+}
+
+.olu-side-content-feature-pictures div.olu-next:hover,
+.olu-side-content-feature-pictures div.olu-prev:hover {
+	color: #ccc;
+}
+
+.olu-side-content-feature-pictures div.olu-next span,
+.olu-side-content-feature-pictures div.olu-prev span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.olu-side-content-feature-pictures div.olu-next {
+	right: 0;
+}
+
+.olu-side-content-feature-pictures div.olu-prev {
+	left: 0;
+}
+
+.olu-side-content-feature-picture {
+	width: 100%;
+	height: 100%;
+}
+
+.olu-side-content-feature-picture.basic {
+	text-align: center;
+}
+
+.olu-side-content-feature-picture.basic img {
+	height: 100%;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#olu-side-content-feature-picture-mapillary-viewer {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+ * Details
+ */
+.olu-side-content-feature-details {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.olu-side-content-feature-details > div {
+	border-top: 1px solid white;
+	display: table;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.olu-side-content-feature-details > div:first-child {
+	border-top: none;
+}
+
+.olu-side-content-feature-detail {
+	display: table-row;
+}
+
+.olu-side-content-feature-detail .olu-key,
+.olu-side-content-feature-detail .olu-value {
+	display: table-cell;
+}
+
+.olu-side-content-feature-detail .olu-key {
+	width: 20px;
+	padding: 0px 10px 15px 5px;
+	text-align: center;
+}
+
+.olu-side-content-feature-detail .olu-key img {
+	height: 20px;
+	max-width: 20px;
+	vertical-align: middle;
+}
+
+.olu-side-content-feature-detail .olu-value a {
+	text-decoration: none;
+}
+
+
+/*
+ * Tags
+ */
+.olu-side-content-feature-tags {
+	border-top: 1px solid white;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.olu-side-content-feature-tags h3 {
+	margin: 10px 0;
+}
+
+.olu-side-content-feature-tags table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.olu-side-content-feature-tags table tr th,
+.olu-side-content-feature-tags table tr td {
+	white-space: normal;   
+	word-break: break-all;
+	word-wrap: break-word;
+	width: auto;
+	border: 1px solid #173878;
+	padding: 2px 4px;
+	text-align: left;
+	color: white;
+}
+
+.olu-side-content-feature-tags table tr th {
+	background-color: rgb(12, 64, 167);
+}
+
+.olu-side-content-feature-tags table tr a {
+	text-decoration: none;
+}

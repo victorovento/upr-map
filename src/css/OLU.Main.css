@@ -1,0 +1,273 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Styles for main view
+ */
+
+/* Leaflet map */
+#olu-map {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+/*
+ * Leaflet buttons
+ */
+.leaflet-right .leaflet-control,
+.leaflet-left .leaflet-control {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.leaflet-right .leaflet-control-scale,
+.leaflet-left .leaflet-control-scale {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.leaflet-bar,
+.leaflet-control-layers {
+	box-shadow: none;
+	font-weight: bold;
+}
+
+.leaflet-right .leaflet-bar,
+.leaflet-right .leaflet-control-layers,
+.leaflet-right .leaflet-control-edit-in-osm {
+	border-radius: 7px 0 0 7px;
+}
+
+.leaflet-left .leaflet-bar,
+.leaflet-left .leaflet-control-layers,
+.leaflet-left .leaflet-control-edit-in-osm {
+	border-radius: 0 7px 7px 0;
+}
+
+/* General definition of buttons */
+.leaflet-bar a,
+.leaflet-bar a:hover,
+.leaflet-control-layers,
+.leaflet-bar button,
+.leaflet-control-edit-in-osm {
+	background-color: rgba(12, 64, 167, 0.7);
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover,
+.leaflet-control-layers a,
+.leaflet-bar button,
+.leaflet-bar button:hover,
+.leaflet-control-edit-in-osm {
+	border-radius: 0 0 0 0;
+	border-bottom: none;
+	color: white;
+	min-width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.4em;
+	cursor: pointer;
+	border: none;
+	box-shadow: none;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover,
+.leaflet-control-layers a,
+.leaflet-bar button,
+.leaflet-bar button:hover {
+	width: 40px;
+}
+
+.leaflet-bar a:hover,
+.leaflet-bar button:hover,
+a.osm-editor:hover {
+	background-color: rgb(12, 64, 167);
+}
+
+.leaflet-bar a.leaflet-disabled,
+.leaflet-bar a.leaflet-disabled:hover {
+	background-color: rgba(12, 64, 167, 0.5);
+	color: #ccc;
+}
+
+/* Round corners */
+.leaflet-right .leaflet-bar a,
+.leaflet-right .leaflet-bar a:hover,
+.leaflet-right .leaflet-control-layers a,
+.leaflet-right .leaflet-bar button,
+.leaflet-right .leaflet-bar button:hover,
+.leaflet-right .leaflet-bar.olu-level-control-container-full .olu-level-control-levels a:first-child,
+.leaflet-right .leaflet-bar.olu-level-control-container-full .olu-level-control-levels a:last-child {
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+.leaflet-left .leaflet-bar a,
+.leaflet-left .leaflet-bar a:hover,
+.leaflet-left .leaflet-control-layers a,
+.leaflet-left .leaflet-bar button,
+.leaflet-left .leaflet-bar button:hover,
+.leaflet-left .leaflet-control-olu-messages,
+.leaflet-right .leaflet-bar.olu-level-control-container-full .olu-level-control-levels a:first-child,
+.leaflet-right .leaflet-bar.olu-level-control-container-full .olu-level-control-levels a:last-child,
+.leaflet-right .leaflet-control-edit-in-osm a {
+	border-bottom-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+}
+
+.leaflet-right .leaflet-bar a:first-child,
+.leaflet-right .leaflet-bar a:first-child:hover,
+.leaflet-right .leaflet-control-layers a,
+.leaflet-right .leaflet-bar button:first-of-type {
+	border-top-left-radius: 7px !important;
+}
+
+.leaflet-right .leaflet-bar a:last-child,
+.leaflet-right .leaflet-bar a:last-child:hover,
+.leaflet-right .leaflet-control-layers a,
+.leaflet-right .leaflet-bar button:last-of-type {
+	border-bottom-left-radius: 7px !important;
+}
+
+.leaflet-left .leaflet-control-layers a,
+.leaflet-left .leaflet-bar button:first-of-type,
+.leaflet-left .leaflet-control-olu-messages {
+	border-top-right-radius: 7px !important;
+}
+
+.leaflet-left .leaflet-control-layers a,
+.leaflet-left .leaflet-bar button:last-of-type,
+.leaflet-left .leaflet-control-olu-messages {
+	border-bottom-right-radius: 7px !important;
+}
+
+/* Redefinitions for certain controls */
+.leaflet-control-layers-list {
+	color: #fff;
+}
+
+.olu-level-control-levels {
+	border-bottom: none;
+}
+
+.easy-button-button .button-state {
+	display: inline;
+}
+
+/* Locate control */
+.leaflet-right .leaflet-bar.leaflet-control-locate {
+	margin-bottom: 0;
+}
+
+.leaflet-right .leaflet-bar.leaflet-control-locate a:last-child {
+	border-bottom-left-radius: 0 !important;
+}
+
+#olu-control-navbar button:first-of-type {
+	border-top-left-radius: 0 !important;
+}
+
+.leaflet-control-locate span.fa {
+	line-height: 40px;
+	font-size: 1.4em;
+}
+
+.leaflet-control-locate.active a {
+	color: #bbb;
+}
+
+/* OSM editors */
+.leaflet-control-edit-in-osm a.osm-editor {
+	color: white;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-control-edit-in-osm a.osm-editor:hover {
+	box-shadow: none;
+	border-radius: 7px;
+}
+
+.leaflet-control-edit-in-osm .osm-editor + .osm-editor {
+	border-left: none;
+}
+
+.leaflet-control-edit-in-osm .osm-editor {
+	margin: 0 2px;
+}
+
+
+/*
+ * Leaflet sidebar
+ */
+.leaflet-sidebar {
+	padding: 0;
+}
+
+.leaflet-sidebar > .leaflet-control {
+	border-radius: 0;
+	box-shadow: none;
+	background-color: rgba(12, 64, 167, 0.9);
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.leaflet-sidebar > .leaflet-control {
+		background-color: rgb(12, 64, 167);
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.leaflet-sidebar { width: 300px; }
+	.leaflet-sidebar.left.visible ~ .leaflet-left { left: 300px; }
+	.leaflet-sidebar.right.visible ~ .leaflet-right { right: 300px; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.leaflet-sidebar { width: 325px; }
+	.leaflet-sidebar.left.visible ~ .leaflet-left { left: 325px; }
+	.leaflet-sidebar.right.visible ~ .leaflet-right { right: 325px; }
+}
+@media (min-width: 1200px) {
+	.leaflet-sidebar { width: 350px; }
+	.leaflet-sidebar.left.visible ~ .leaflet-left { left: 350px; }
+	.leaflet-sidebar.right.visible ~ .leaflet-right { right: 350px; }
+}
+
+.leaflet-sidebar .close {
+	background-color: #08296B;
+	color: #fff;
+}
+
+.leaflet-sidebar a {
+	color: #81CFE0;
+}
+
+
+/*
+ * Leaflet attribution
+ */
+.leaflet-control-attribution a {
+	color: rgb(12, 64, 167);
+}
+
+.leaflet-control-attribution img {
+	height: 12px;
+	vertical-align: middle;
+}

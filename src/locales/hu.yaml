@@ -1,0 +1,67 @@
+hu:
+  olu:
+    name: OpenLevelUp!
+  notes:
+    desc: Térképjavítás javaslása
+    sent: Megjegyzés sikeresen elküldve
+    id: "#{id}. megjegyzés"
+    add:
+      name: Megjegyzés hozzáadása
+      desc: Észrevett egy hibát vagy hiányosságot? Mondja el másoknak is, hogy kijavíthassuk. Mozgassa a jelölőt a helyes pozícióhoz, és írjon egy megjegyzést, amelyben kifejti a problémát.
+      privacy: "(Ne adjon meg személyes adatokat vagy szerzői jog alatt álló térképekről és könyvtárlistákból származó információkat.)"
+    actions:
+      opened: nyitott
+      closed: lezárt
+      reopened: újra megnyitott
+      commented: kommentált
+    comment:
+      user: "{action} tevékenység <a href='http://www.openstreetmap.org/user/{user}'>{user}</a> által ekkor: {date}"
+      anon: "{action} tevékenység egy névtelen felhasználó által ekkor: {date}"
+  buttons:
+    add: Hozzáadás
+    cancel: Mégse
+    search: Keresés
+  search:
+    desc: Hely keresése a világban
+    name: Keresés
+    ask: Hová szeretne menni?
+    results:
+      none: Nincs eredmény
+    error: Hiba történt
+  map:
+    layers:
+      name: Stílus
+      desc: Térképháttér és -stílus módosítása
+      background: Háttér
+    zoom:
+      showdata: Nagyítson az adatok megjelenítéséhez
+    level:
+      up:
+        desc: Magasabb szintek megtekintése
+      down:
+        desc: Alacsonyabb szintek megtekintése
+      value: "{l} szint"
+  routing:
+    desc: Két hely közötti irány megkeresése
+  data:
+    download:
+      building: Épületadatok lekérése
+      location: Helyadatok lekérése
+      fail: Nem sikerül az adatok lekérése
+    pictures:
+      fail: "Nem sikerül letölteni a következő szolgáltató képeit: {provider}"
+    view:
+      osm: Megtekintés az OpenStreetMapen
+  pictures:
+    loading: Kép betöltése…
+    show:
+      fullsize: Kép megtekintése teljes méretben
+  features:
+    name: Objektum
+    tags: Címkék
+    url:
+      invalid: Érvénytelen webcím (URL)
+    email:
+      invalid: Érvénytelen e-mail cím
+    hours:
+      show: Kattintson az órák megtekintéséhez

@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html>
+<!--
+	This file is part of OpenLevelUp!.
+
+	OpenLevelUp! is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	any later version.
+
+	OpenLevelUp! is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!--
+	OpenLevelUp!
+	Web viewer for indoor mapping (based on OpenStreetMap data).
+	Author: Adrien PAVIE
+	
+	Example page
+-->
+<head>
+	<!-- General definitions -->
+	<title>OpenLevelUp!</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="See inside buildings with OpenLevelUp! Based on OpenStreetMap indoor data." />
+	<meta name="keywords" content="openlevelup, openstreetmap, osm, building, indoor, level, floor, map, viewer" />
+	<meta name="author" content="Adrien PAVIE (PanierAvide)" />
+	<meta name="copyright" content="&copy; Adrien PAVIE 2015-2016, under AGPL v3" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="OLU.min.css" />
+</head>
+<body>
+	<!-- OpenLevelUp div -->
+	<div id="openlevelup"></div>
+	
+	<!-- JS libraries -->
+	<script src="OLU.js"></script>
+	<!--script src="OLU.min.js"></script-->
+	
+	<!-- Init code -->
+	<script>
+		var myOlu = OLU.init("openlevelup", "advanced", {
+			"api": {
+				"overpass": "https://www.overpass-api.de/api/interpreter?data="
+			}
+		});
+	</script>
+</body>
+</html>

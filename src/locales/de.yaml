@@ -1,0 +1,67 @@
+de:
+  olu:
+    name: OpenLevelUp!
+  notes:
+    desc: Eine Verbesserung der Karte vorschlagen
+    sent: Die Notiz wurde erfolgreich angelegt
+    id: "Notiz #{id}"
+    add:
+      name: Eine Notiz hinzufügen
+      desc: Fehlt etwas oder hast Du einen Fehler bemerkt? Lass es uns wissen, damit wir das Problem beheben können. Setze den Marker an die richtige Position und schreibe eine Notiz, um das Problem zu erklären.
+      privacy: "(Bitte gib keine persönlichen Daten oder Informationen aus urheberrechtlich geschützten Karten, Telefon- oder Adressbüchern usw. an)"
+    actions:
+      opened: Geöffnet
+      closed: Geschlossen
+      reopened: Wieder geöffnet
+      commented: Kommentiert
+    comment:
+      user: "{action} von <a href='http://www.openstreetmap.org/user/{user}'>{user}</a> am {date}"
+      anon: "{action} von einem anonymen Nutzer am {date}"
+  buttons:
+    add: Hinzufügen
+    cancel: Abbrechen
+    search: Suchen
+  search:
+    desc: Einen Ort auf der Welt finden
+    name: Suchen
+    ask: Wo willst Du hin?
+    results:
+      none: Kein Ergebnis gefunden
+    error: Ein Fehler ist aufgetreten
+  map:
+    layers:
+      name: Stil
+      desc: Kartenhintergrund und Kartenstil ändern
+      background: Hintergrund
+    zoom:
+      showdata: Hineinzoomen, um Daten zu sehen
+    level:
+      up:
+        desc: Höhere Stockwerke anzeigen
+      down:
+        desc: Niedrigere Stockwerke anzeigen
+      value: "Stockwerk {l}"
+  routing:
+    desc: Route zwischen zwei Orten berechnen
+  data:
+    download:
+      building: Rufe Gebäudedaten ab
+      location: Rufe Ortsdaten ab
+      fail: Kann Daten nicht abrufen
+    pictures:
+      fail: "Kann Fotos von {provider} nicht abrufen"
+    view:
+      osm: Auf OpenStreetMap anzeigen
+  pictures:
+    loading: Lade Bild...
+    show:
+      fullsize: Dieses Bild in Originalgröße anzeigen
+  features:
+    name: Objekt
+    tags: Tags
+    url:
+      invalid: Ungültige URL
+    email:
+      invalid: Ungültige E-Mail-Adresse
+    hours:
+      show: Klicken, um Öffnungszeiten anzuzeigen

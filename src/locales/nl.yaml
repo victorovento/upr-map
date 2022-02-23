@@ -1,0 +1,75 @@
+nl:
+    olu:
+        name: OpenLevelUp!
+    
+    notes:
+        desc: Stel een kaartverbetering voor
+        sent: De notitie is succesvol verstuurd
+        id: "Notitie #{id}"
+        add:
+            name: Voeg notitie toe
+            desc: Een fout gevonden of mist er iets? Laat andere mensen het weten zodat we het kunnen oplossen. Verplaats de marker naar de correcte positie en type een notitie om het probleem uit te leggen.
+            privacy: "(Vul alsjeblieft geen persoonlijke informatie of informatie van kaarten of pagina's met copyright in)"
+        actions:
+            opened: geopend
+            closed: gesloten
+            reopened: heropend
+            commented: gereageerd
+        comment:
+            user: "{action} door <a href='http://www.openstreetmap.org/user/{user}'>{user}</a> op {date}"
+            anon: "{action} door een anonieme gebruiker op {date}"
+    
+    buttons:
+        add: Toevoegen
+        cancel: Annuleren
+        search: Zoek
+    
+    search:
+        desc: Vind een plaats op de wereld
+        name: Zoeken
+        ask: Waar wil je heengaan?
+        results:
+            none: Geen resultaat gevonden
+        error: Er is een fout opgetreden
+    
+    map:
+        layers:
+            name: Stijl
+            desc: Verander kaartachtergrond en -stijl
+            background: Achtergrond
+        zoom:
+            showdata: Zoom in om data te zien
+        level:
+            up:
+                desc: Weergeef hogere verdiepingen
+            down:
+                desc: Weergeef lagere verdiepingen
+            value: "Verdieping {l}"
+    
+    routing:
+        desc: Vind routebeschrijving tussen twee plaatsen
+
+    data:
+        download:
+            building: Gebouwdata laden
+            location: Locatiedata laden
+            fail: Kan data niet laden
+        pictures:
+            fail: "{provider} afbeeldingen kunnen niet geladen worden"
+        view:
+            osm: Bekijk op OpenStreetMap
+
+    pictures:
+        loading: Afbeelding laden...
+        show:
+            fullsize: Bekijk deze afbeelding in volledige grootte
+        
+    features:
+        name: Object
+        tags: Tags
+        url:
+            invalid: Ongeldige URL
+        email:
+            invalid: Ongeldig e-mailadres
+        hours:
+            show: Klik om tijden te bekijken

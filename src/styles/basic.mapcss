@@ -1,0 +1,232 @@
+@import url('default.mapcss');
+
+meta {
+	title: 'Points of interest';
+	icon-image: url('icon_cuisine.png');
+}
+
+
+/****************************************************************************
+ * Labels
+ */
+
+*[name][amenity] {
+	text-color: #3E3E3E;
+}
+
+*[name][shop], *[name][craft] {
+	text-color: #AC39AC;
+}
+
+*[name][tourism] {
+	text-color: #0099E4;
+}
+
+
+/****************************************************************************
+ * Public transport objects
+ */
+
+*[highway=bus_stop] {
+	icon-image: url('highway_bus_stop.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Amenities
+ */
+
+*[amenity=~/bar|biergarten|cafe|fast_food|food_court|ice_cream|pub|restaurant|college|kindergarten|library|school|music_school|driving_school|language_school|university|car_rental|parking|taxi|atm|bank|bureau_de_change|clinic|dentist|doctors|hospital|nursing_home|pharmacy|social_facility|veterinary|arts_centre|brothel|casino|cinema|community_centre|gambling|nightclub|planetarium|social_centre|stripclub|studio|swingerclub|animal_boarding|animal_shelter|courthouse|coworking_space|crematorium|crypt|dojo|embassy|fire_station|gym|internet_cafe|photo_booth|place_of_worship|police|post_box|post_office|sauna|shower|telephone|toilets|piano|parking_space/] {
+	fill-color: #FFDAAD;
+	opacity: 1;
+	fill-opacity: 1;
+	icon-image: url('amenity_$[amenity].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	text: name;
+}
+
+/** Comfort amenities **/
+*[amenity=toilets],
+*[public_transport=waiting_area],
+*[room=waiting],
+*[area=waiting] {
+	fill-color: #E3C8E3;
+}
+
+/** Small amenities **/
+*[amenity=~/atm|photo_booth|post_box|piano|telephone|parking_space/] {
+	color: #FFBA66;
+}
+
+/** Large, landuse-like, amenities **/
+area[amenity=~/school|college|university|hospital|parking/] {
+	z-index: -9;
+}
+
+/** Independant amenities **/
+*[amenity=~/parking|parking_space|taxi|bus_station|shelter/] {
+	color: #E0BF96;
+	width: 1;
+}
+
+/** Parking for disabled people **/
+*[amenity=parking_space][wheelchair=yes],
+*[amenity=parking_space][capacity:disabled] {
+	icon-image: url('parking_disabled.png');
+}
+
+/** Toilets **/
+*[amenity=toilets][female=~/yes|only|designated/][!male],
+*[amenity=toilets][female=~/yes|only|designated/][male=no] {
+	icon-image: url('amenity_toilets_women.png');
+}
+
+*[amenity=toilets][male=~/yes|only|designated/][!female],
+*[amenity=toilets][male=~/yes|only|designated/][female=no] {
+	icon-image: url('amenity_toilets_men.png');
+}
+
+*[amenity=toilets][wheelchair=~/yes|only|designated/] {
+	icon-image: url('amenity_toilets_disabled.png');
+}
+
+
+/****************************************************************************
+ * Shops
+ */
+
+*[shop] {
+	icon-image: url('shopping_$[shop].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	opacity: 1;
+	text: name;
+}
+
+*[shop][!name][brand] {
+	text: brand;
+}
+
+area[shop], area[craft] {
+	fill-color: #FFDAAD;
+	fill-opacity: 1;
+}
+
+/** Store departements **/
+*[department] {
+	fill-color: #FFCFCC;
+	color: #D29494;
+	fill-opacity: 1;
+	z-index: -4;
+	opacity: 1;
+	width: 0.5;
+}
+
+*[department=store_section][vending] {
+	icon-image: url('vending_$[vending].png');
+	icon-image-aliases: '"news_papers": "newspapers", "drinks": "drink", "vegetables": "vegetable"';
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Tourism-related objects
+ */
+
+*[tourism=~/aquarium|artwork|attraction|gallery|hostel|hotel|motel|museum/],
+*[information=~/office|map/] {
+	icon-image: url('tourism_$[tourism].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	color: #BF9962;
+	fill-color: #FFF6AD;
+	opacity: 1;
+	fill-opacity: 1;
+	text: name;
+}
+
+/** Glass cabinet **/
+*[indoor=glass_cabinet] {
+	color: #A2CCC8;
+	fill-color: #E3F3F5;
+	opacity: 1;
+	fill-opacity: 1;
+	width: 2;
+	z-index: -1;
+}
+
+/** Showcase **/
+*[amenity=showcase] {
+	color: #A2CCC8;
+	fill-color: #A2CCC8;
+	opacity: 1;
+	fill-opacity: 1;
+	width: 2;
+	z-index: -1;
+}
+
+/** Information office **/
+*[information=office] {
+	color: #7583D9;
+	opacity: 1;
+	icon-image: url('information_office.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	text: name;
+}
+
+/** Historic elements **/
+*[historic] {
+	text: name;
+}
+
+way[historic],
+relation[type=multipolygon][historic] {
+	color: #C0B0A2;
+	opacity: 0.5;
+	width: 0.5;
+	fill-color: #C0B0A2;
+	z-index: -1;
+}
+
+*[historic=tomb] {
+	icon-image: url('historic_tomb.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+*[historic=artifact] {
+	icon-image: url('tourism_archaeological.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+/** Grass **/
+area[landuse=grass],
+relation[type=multipolygon][landuse=grass] {
+	opacity: 0;
+	width: 0;
+	fill-color: #CFECA8;
+	fill-opacity: 1;
+	z-index: -1;
+}
+
+/** Charging bike **/
+*[generator:type=bicycle] {
+	icon-image: url('generator_type_bicycle.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}

@@ -1,0 +1,67 @@
+fr:
+  olu:
+    name: OpenLevelUp!
+  notes:
+    desc: Suggérer une amélioration de la carte
+    sent: La note a été ajoutée avec succès
+    id: "Note n°{id}"
+    add:
+      name: Ajouter une note
+      desc: Vous avez constaté un manque ou une erreur ? Faites-le savoir aux contributeurs pour que la carte soit améliorée. Déplacez le marqueur à la position exacte et décrivez le problème.
+      privacy: "(N'entrez pas d'informations personnelles ou provenant de sources non libres de droits)"
+    actions:
+      opened: ouvert
+      closed: fermé
+      reopened: réouvert
+      commented: commenté
+    comment:
+      user: "{action} par <a href='http://www.openstreetmap.org/user/{user}'>{user}</a> le {date}"
+      anon: "{action} par un utilisateur anonyme le {date}"
+  buttons:
+    add: Ajouter
+    cancel: Annuler
+    search: Rechercher
+  search:
+    desc: Trouver un lieu sur Terre
+    name: Recherche
+    ask: Où souhaitez-vous aller ?
+    results:
+      none: Aucun résultat trouvé
+    error: Une erreur s'est produite
+  map:
+    layers:
+      name: Style
+      desc: Changer le fond et le style de carte
+      background: Fond de carte
+    zoom:
+      showdata: Zoomez pour voir les données
+    level:
+      up:
+        desc: Voir le niveau supérieur
+      down:
+        desc: Voir le niveau inférieur
+      value: "Niveau {l}"
+  routing:
+    desc: Trouver l'itinéraire entre deux lieux
+  data:
+    download:
+      building: Téléchargement des bâtiments
+      location: Téléchargement de la zone
+      fail: Téléchargement impossible
+    pictures:
+      fail: "Les photos {provider} n'ont pu être téléchargées"
+    view:
+      osm: Voir sur OpenStreetMap
+  pictures:
+    loading: Chargement de l'image...
+    show:
+      fullsize: Agrandir cette image
+  features:
+    name: Objet
+    tags: Tags
+    url:
+      invalid: URL invalide
+    email:
+      invalid: Courriel invalide
+    hours:
+      show: Voir les horaires

@@ -1,0 +1,110 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Styles for OLU.view.Side
+ */
+
+@media (max-width: 767px) {
+	.leaflet-sidebar.halfsize {
+		height: 50%;
+	}
+	
+	.leaflet-sidebar.halfsize > .leaflet-control {
+		background-color: rgba(12, 64, 167, 0.9);
+	}
+}
+
+.leaflet-sidebar .close {
+	z-index: 1000;
+}
+
+/*
+ * Buttons
+ */
+.olu-side-content button {
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.olu-side-content button.olu-success {
+	background-color: rgb(46, 204, 113);
+	border-color: #26A65B;
+}
+
+.olu-side-content button.olu-success:hover {
+	background-color: #8FE0B1;
+}
+
+.olu-side-content button.olu-warning {
+	background-color: rgb(244, 179, 80);
+	border-color: #F89406;
+}
+
+.olu-side-content button.olu-warning:hover {
+	background-color: #FFDBA4;
+}
+
+
+/*
+ * Full width input
+ */
+.olu-side-content .olu-input-field {
+	display: table;
+	border-collapse: separate;
+	width: 100%;
+	position: relative;
+}
+
+.olu-side-content .olu-input-field > * {
+	display: table-cell;
+	box-sizing: border-box;
+	border-collapse: separate;
+}
+
+.olu-side-content .olu-input-field input {
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.olu-side-content .olu-input-field span.olu-btn {
+	position: relative;
+	font-size: 1em;
+	white-space: nowrap;
+	width: 1%;
+	vertical-align: middle;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.olu-side-content .olu-input-field span.olu-btn button {
+	z-index: 2;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 5px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	overflow: visible;
+	padding: 6px 3px;
+}

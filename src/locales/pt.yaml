@@ -1,0 +1,67 @@
+pt:
+  olu:
+    name: OpenLevelUp!
+  notes:
+    desc: Proponha uma correção ao mapa
+    sent: A nota foi enviada com sucesso
+    id: "Nota #{id}"
+    add:
+      name: Adicionar nota
+      desc: Detetou um erro ou algo em falta? Informe os outros contribuidores para que possam corrigir ou adicionar. Mova o marcador para a posição correta e escrava uma nota a explicar o problema.
+      privacy: "(Por favor não submeta informação pessoal ou informação de outros mapas com direitos de autor ou de listagens)"
+    actions:
+      opened: Aberto
+      closed: Encerrado
+      reopened: Reabriu
+      commented: Comentada
+    comment:
+      user: "{action} por {user} em {date}"
+      anon: "{action} por um utilizador anónimo em {date}"
+  buttons:
+    add: Adicionar
+    cancel: Cancelar
+    search: Procurar
+  search:
+    desc: Encontrar um local no mundo
+    name: Procurar
+    ask: Onde quer ir?
+    results:
+      none: Nenhum resultado encontrado
+    error: Ocorreu um erro
+  map:
+    layers:
+      name: Estilo
+      desc: Alterar o estilo ou fundo do mapa
+      background: Fundo
+    zoom:
+      showdata: Aproxime para ver a informação
+    level:
+      up:
+        desc: Ver os pisos do topo
+      down:
+        desc: Ver os pisos térreos
+      value: "Piso {l}"
+  routing:
+    desc: Encontrar direções entre dois locais
+  data:
+    download:
+      building: 'Recolher informação do edifício '
+      location: Recolher informação do local
+      fail: Não é possível recolher a informação
+    pictures:
+      fail: "{provider} as imagens não pode ser descarregadas"
+    view:
+      osm: Ver no OpenStreetMap
+  pictures:
+    loading: Carregando imagem...
+    show:
+      fullsize: Ver a imagem no tamanho máximo
+  features:
+    name: Elemento
+    tags: Etiqueta
+    url:
+      invalid: URL inválido
+    email:
+      invalid: Endereço de email inválido
+    hours:
+      show: Clique para ver as horas

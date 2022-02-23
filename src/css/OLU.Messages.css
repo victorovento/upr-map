@@ -1,0 +1,70 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Styles for OLU.view.Messages
+ */
+
+/** Container **/
+.leaflet-messages {
+	right: 0;
+	left: 0;
+	z-index: 10000;
+}
+
+/** Default style **/
+.leaflet-control-olu-messages {
+	display: none; /* Initially hidden */
+	background-color: white;
+	padding: 5px 0;
+	font-size: 1.3em;
+	text-align: center;
+	margin: 0 auto;
+	width: 400px;
+	font-weight: bold;
+}
+
+@media (max-width: 399px) {
+	.leaflet-control-olu-messages {
+		width: 100%;
+	}
+}
+
+@media (min-width: 400px) {
+	.leaflet-messages.leaflet-bottom .leaflet-control-olu-messages {
+		border-radius: 7px 7px 0 0;
+	}
+	
+	.leaflet-messages.leaflet-top .leaflet-control-olu-messages {
+		border-radius: 0 0 7px 7px;
+	}
+}
+
+/** Info **/
+.leaflet-control-olu-messages.info {
+	background-color: rgba(89, 171, 227, 0.9);
+}
+
+/** Warning **/
+.leaflet-control-olu-messages.warning {
+	background-color: rgba(245, 171, 53, 0.9);
+}
+
+/** Error **/
+.leaflet-control-olu-messages.error {
+	background-color: rgba(231, 76, 60, 0.9);
+}

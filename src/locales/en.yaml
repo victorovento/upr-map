@@ -1,0 +1,75 @@
+en:
+    olu:
+        name: OpenLevelUp!
+    
+    notes:
+        desc: Propose a map correction
+        sent: The note was successfully sent
+        id: "Note #{id}"
+        add:
+            name: Add a note
+            desc: Spotted a mistake or something missing? Let other people know so we can fix it. Move the marker to the correct position and type a note to explain the problem.
+            privacy: "(Please don't enter personal information or information from copyrighted maps or directory listings)"
+        actions:
+            opened: opened
+            closed: closed
+            reopened: reopened
+            commented: commented
+        comment:
+            user: "{action} by <a href='http://www.openstreetmap.org/user/{user}'>{user}</a> on {date}"
+            anon: "{action} by an anonym user on {date}"
+    
+    buttons:
+        add: Add
+        cancel: Cancel
+        search: Search
+    
+    search:
+        desc: Find a place in the world
+        name: Search
+        ask: Where do you want to go ?
+        results:
+            none: No result found
+        error: An error occured
+    
+    map:
+        layers:
+            name: Style
+            desc: Change map background and style
+            background: Background
+        zoom:
+            showdata: Zoom in to see data
+        level:
+            up:
+                desc: See higher levels
+            down:
+                desc: See lower levels
+            value: "Level {l}"
+    
+    routing:
+        desc: Find direction between two places
+
+    data:
+        download:
+            building: Retrieving building data
+            location: Retrieving location data
+            fail: Can't retrieve data
+        pictures:
+            fail: "{provider} pictures can't be retrieved"
+        view:
+            osm: See on OpenStreetMap
+
+    pictures:
+        loading: Loading image...
+        show:
+            fullsize: See this picture in full size
+        
+    features:
+        name: Feature
+        tags: Tags
+        url:
+            invalid: Invalid URL
+        email:
+            invalid: Invalid email address
+        hours:
+            show: Click to see hours

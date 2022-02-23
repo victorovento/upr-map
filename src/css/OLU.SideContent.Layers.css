@@ -1,0 +1,83 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Styles for OLU.view.sidecontent.Layers
+ */
+
+/*
+ * Layers buttons
+ */
+.olu-side-content-layers-button {
+	height: 50px;
+	border: 3px solid #08296B;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.olu-side-content-layers-button:hover {
+	border-color: #85A4E3;
+	background-color: rgba(255,255,255,0.3) !important;
+}
+
+.olu-side-content-layers-button.selected {
+	border-color: #51A74C;
+}
+
+/*
+ * Map styles buttons
+ */
+.olu-side-content-layers-button.style {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.olu-side-content-layers-button.style img {
+	vertical-align: middle;
+	height: 30px;
+	max-width: 30px;
+	margin: 10px;
+}
+
+/*
+ * Base layers buttons
+ */
+.olu-side-content-layers-button.base {
+	height: 70px;
+}
+
+.olu-side-content-layers-button.base img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	top: -100%;
+	min-width: 256px;
+}
+
+.olu-side-content-layers-button.base span {
+	background-color: rgba(255,255,255,0.9);
+	color: #555;
+	padding: 5px 8px;
+	line-height: 70px;
+	position: relative;
+	z-index: 1;
+}

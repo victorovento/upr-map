@@ -1,0 +1,150 @@
+@import url('basic.mapcss');
+
+meta {
+	title: 'High level of detail';
+	icon-image: url('icon_loupe.png');
+}
+
+/****************************************************************************
+ * Amenities
+ */
+
+/** All amenities **/
+*[amenity][amenity!=showcase] {
+	fill-color: #FFDAAD;
+	opacity: 1;
+	fill-opacity: 1;
+	icon-image: url('amenity_$[amenity].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	text: name;
+}
+
+/** Stand up bench **/
+*[amenity=~/bench|seat/][bench:type=stand_up] {
+	icon-image: url('bench_type_stand_up.png');
+}
+
+/** Vending machine icons **/
+*[vending] {
+	icon-image: url('vending_$[vending].png');
+	icon-image-aliases: '"news_papers": "newspapers"';
+}
+
+
+/****************************************************************************
+ * Barriers
+ */
+
+*[barrier=hedge] {
+	color: #8CD16E;
+}
+
+*[barrier=shelf] {
+	color: #DBA0A0;
+	fill-color: #DBA0A0;
+}
+
+*[barrier=~/self_checkout|checkout/] {
+	fill-color: #EEEEEE;
+	icon-image: url('barrier_$[barrier].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Railway
+ */
+
+*[railway=buffer_stop] {
+	icon-image: url('railway_$[railway].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Emergency
+ */
+
+*[emergency] {
+	icon-image: url('emergency_$[emergency].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Man made
+ */
+
+*[man_made=~/surveillance|lamp|street_lamp/] {
+	icon-image: url('man_made_$[man_made].png');
+	icon-image-aliases: '"street_lamp": "lamp"';
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Tourism
+ */
+
+*[artwork_type=~/sculpture|statue|stone|bust|mural/] {
+	icon-image: url('artwork_type_$[artwork_type].png');
+	icon-image-aliases: '"sculpture": "statue", "stone": "statue", "bust": "statue"';
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+
+/****************************************************************************
+ * Signaletics
+ */
+
+*[information] {
+	color: #7583D9;
+	opacity: 1;
+	icon-image: url('information_$[information].png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+}
+
+*[information=board][support] {
+	icon-image: url('information_$[information]_$[support].png');
+}
+
+*[advertising] {
+	color: #5B5B5B;
+	opacity: 1;
+	icon-image: url('pub_$[advertising].png');
+	icon-image-aliases: '"sign": "poster_box", "wall_painting": "poster_box"';
+}
+
+*[advertising=billboard][support=pole] {
+	icon-image: url('pub_$[advertising]_$[support].png');
+}
+
+*[pole=landmark_sign] {
+	icon-image: url('pole_landmark_sign.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	text: ref;
+}
+
+*[highway=milestone] {
+	icon-image: url('poi_point_of_interest.png');
+	icon-width: 16;
+	icon-height: 16;
+	icon-opacity: 1;
+	text: name;
+}

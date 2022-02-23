@@ -1,0 +1,56 @@
+/*
+ * This file is part of OpenLevelUp!.
+ * 
+ * OpenLevelUp! is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * OpenLevelUp! is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with OpenLevelUp!.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Styles for OLU.view.sidecontent.Search
+ */
+
+.olu-sidecontent-search-area {
+	width: 100%;
+	position: relative;
+}
+
+#olu-sidecontent-search-results ul {
+	list-style: none;
+	padding: 0;
+}
+
+#olu-sidecontent-search-results ul li {
+	border-bottom: 1px solid white;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+#olu-sidecontent-search-results ul li:hover {
+	background-color: #4183D7;
+	color: #C5EFF7;
+}
+
+#olu-sidecontent-search-results ul li:last-child {
+	border-bottom: none;
+}
+
+#olu-sidecontent-search-results ul li .olu-result-name {
+	display: block;
+}
+
+#olu-sidecontent-search-results ul li .olu-result-type {
+	display: block;
+	color: #bbb;
+	font-size: 0.9em;
+	text-align: right;
+}
