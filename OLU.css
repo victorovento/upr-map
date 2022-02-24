@@ -47,7 +47,7 @@
 	        user-select: none;
 	  -webkit-user-drag: none;
 	}
-/* Prevents IE11 from highlighting tiles in blue */
+/* Prevents IE11 from highlighting tiles in  */
 .leaflet-tile::selection {
 	background: transparent;
 }
@@ -95,7 +95,7 @@
 	-webkit-tap-highlight-color: transparent;
 }
 .leaflet-container a {
-	-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+	-webkit-tap-highlight-color: #01b636;
 }
 .leaflet-tile {
 	filter: inherit;
@@ -276,13 +276,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	outline: 0;
 	}
 .leaflet-container a {
-	color: #0078A8;
+	color: ##3bd16f;
 	}
 .leaflet-container a.leaflet-active {
-	outline: 2px solid orange;
+	outline: 2px solid greenyellow;
 	}
 .leaflet-zoom-box {
-	border: 2px dotted #38f;
+	border: 2px dotted ##74e29a;
 	background: rgba(255,255,255,0.5);
 	}
 
@@ -3306,7 +3306,7 @@ a.osm-editor:hover {
 
 /** Current level button **/
 .olu-level-control-button-lvl-current {
-	background-color: rgb(12, 64, 167) !important;
+	background-color: #01b636 !important;
 }
 
 /** Override first button **/
@@ -3419,7 +3419,7 @@ a.osm-editor:hover {
 	}
 	
 	.leaflet-sidebar.halfsize > .leaflet-control {
-		background-color: rgba(12, 64, 167, 0.9);
+		background-color: #01b636;
 	}
 }
 
@@ -3643,8 +3643,8 @@ p.olu-note-footer {
 }
 
 #olu-sidecontent-search-results ul li:hover {
-	background-color: #4183D7;
-	color: #C5EFF7;
+	background-color: #3BD16F;
+	color: #E3E3E3;
 }
 
 #olu-sidecontent-search-results ul li:last-child {
@@ -3831,14 +3831,14 @@ p.olu-note-footer {
 	word-break: break-all;
 	word-wrap: break-word;
 	width: auto;
-	border: 1px solid #173878;
+	border: 1px solid #01922d;
 	padding: 2px 4px;
 	text-align: left;
 	color: white;
 }
 
 .olu-side-content-feature-tags table tr th {
-	background-color: rgb(12, 64, 167);
+	background-color: #01b636;
 }
 
 .olu-side-content-feature-tags table tr a {
@@ -3871,7 +3871,7 @@ p.olu-note-footer {
  */
 .olu-side-content-layers-button {
 	height: 50px;
-	border: 3px solid #08296B;
+	border: 3px solid #007c25;
 	border-radius: 5px;
 	margin-bottom: 10px;
 	font-size: 1.2em;
@@ -3882,7 +3882,7 @@ p.olu-note-footer {
 }
 
 .olu-side-content-layers-button:hover {
-	border-color: #85A4E3;
+	border-color: #71e981;
 	background-color: rgba(255,255,255,0.3) !important;
 }
 
@@ -4069,7 +4069,7 @@ p.olu-note-footer {
 .leaflet-control-layers,
 .leaflet-bar button,
 .leaflet-control-edit-in-osm {
-	background-color: rgba(12, 64, 167, 0.7);
+	background-color: #01b636;
 }
 
 .leaflet-bar a,
@@ -4101,12 +4101,12 @@ p.olu-note-footer {
 .leaflet-bar a:hover,
 .leaflet-bar button:hover,
 a.osm-editor:hover {
-	background-color: rgb(12, 64, 167);
+	background-color: #01b636;
 }
 
 .leaflet-bar a.leaflet-disabled,
 .leaflet-bar a.leaflet-disabled:hover {
-	background-color: rgba(12, 64, 167, 0.5);
+	background-color: #007724;
 	color: #ccc;
 }
 
@@ -4226,13 +4226,13 @@ a.osm-editor:hover {
 .leaflet-sidebar > .leaflet-control {
 	border-radius: 0;
 	box-shadow: none;
-	background-color: rgba(12, 64, 167, 0.9);
+	background-color: #01b636;
 	color: #fff;
 }
 
 @media (max-width: 767px) {
 	.leaflet-sidebar > .leaflet-control {
-		background-color: rgb(12, 64, 167);
+		background-color: #01b636;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4252,12 +4252,12 @@ a.osm-editor:hover {
 }
 
 .leaflet-sidebar .close {
-	background-color: #08296B;
+	background-color: #01b636;
 	color: #fff;
 }
 
 .leaflet-sidebar a {
-	color: #81CFE0;
+	color: #74e39a;
 }
 
 
@@ -4265,7 +4265,7 @@ a.osm-editor:hover {
  * Leaflet attribution
  */
 .leaflet-control-attribution a {
-	color: rgb(12, 64, 167);
+	color: #01b636;
 }
 
 .leaflet-control-attribution img {

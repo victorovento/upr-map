@@ -1,10 +1,10 @@
 en:
     olu:
-        name: OpenLevelUp!
+        name: UPRmap!
     
     notes:
-        desc: Propose a map correction
-        sent: The note was successfully sent
+        desc: Propón una actualización al mapa
+        sent: La propuesta fue enviada
         id: "Note #{id}"
         add:
             name: Add a note
@@ -20,56 +20,56 @@ en:
             anon: "{action} by an anonym user on {date}"
     
     buttons:
-        add: Add
-        cancel: Cancel
-        search: Search
+        add: Añadir
+        cancel: Cancelar
+        search: Buscar
     
     search:
-        desc: Find a place in the world
-        name: Search
-        ask: Where do you want to go ?
+        desc: Buscar un lugar
+        name: Buscar
+        ask: ¿A donde deseas ir?
         results:
-            none: No result found
-        error: An error occured
+            none: No se encontraron resultados
+        error: Un error ha ocurrido
     
     map:
         layers:
-            name: Style
-            desc: Change map background and style
-            background: Background
+            name: Mapa
+            desc: Selecciona un mapa
+            background: Mapa
         zoom:
-            showdata: Zoom in to see data
+            showdata: Acerca para ver los datos
         level:
             up:
-                desc: See higher levels
+                desc: Ver niveles superiores
             down:
-                desc: See lower levels
-            value: "Level {l}"
+                desc: Ver niveles inferiores
+            value: "Nivel {l}"
     
     routing:
-        desc: Find direction between two places
+        desc: Buscar dirección entre dos lugares
 
     data:
         download:
-            building: Retrieving building data
-            location: Retrieving location data
-            fail: Can't retrieve data
+            building: Obteniendo datos...
+            location: Obteniendo datos...
+            fail: No se pueden obtener los datos
         pictures:
-            fail: "{provider} pictures can't be retrieved"
+            fail: "Imágenes de {provider} no pueden ser obtenidas"
         view:
-            osm: See on OpenStreetMap
+            osm: Ver en OpenStreetMap
 
     pictures:
-        loading: Loading image...
+        loading: Cargando imagen...
         show:
-            fullsize: See this picture in full size
+            fullsize: Ver esta imagen en máxima resolución
         
     features:
-        name: Feature
-        tags: Tags
+        name: Característica
+        tags: Etiquetas
         url:
-            invalid: Invalid URL
+            invalid: URL inválida
         email:
-            invalid: Invalid email address
+            invalid: Dirección de email inválida
         hours:
-            show: Click to see hours
+            show: Click para ver las horas
